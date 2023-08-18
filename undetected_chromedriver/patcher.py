@@ -69,7 +69,7 @@ class Patcher(object):
         """
         self.force = force
         self._custom_exe_path = False
-        prefix = "undetected"
+        prefix = str(random.randint(1,9999999999))
         self.user_multi_procs = user_multi_procs
 
         if not os.path.exists(self.data_path):
